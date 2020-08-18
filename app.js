@@ -104,7 +104,7 @@ app.use('/api', items);
 
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
-  err.status = 404;
+  err.status = 405;
   next(err);
 });
 
